@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "yarn install-framework-ui && vite",
-    "build": "yarn install-framework-ui && vite build",
+"scripts": {
+    "dev": "vite",
+    "build": "vite build",
     "serve": "vite preview",
-    "install-framework-ui": "[ -f ../../frappe/ui/node_modules/.yarn-integrity ] || (cd ../../frappe/ui && yarn install)",
+    "install-framework-ui": "true",
     "postinstall": "patch-package"
   },
   "dependencies": {
